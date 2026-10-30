@@ -1,3 +1,4 @@
+
 package com.thealgorithms.maths;
 
 /**
@@ -78,10 +79,10 @@ public final class Area {
      */
     public static double surfaceAreaPyramid(final double sideLength, final double slantHeight) {
         if (sideLength <= 0) {
-            throw new IllegalArgumentException("");
+            throw new IllegalArgumentException("Must be a positive sideLength");
         }
         if (slantHeight <= 0) {
-            throw new IllegalArgumentException("slant height must be greater than 0");
+            throw new IllegalArgumentException("Must be a positive slantHeight");
         }
         double baseArea = sideLength * sideLength;
         double lateralSurfaceArea = 2 * sideLength * slantHeight;
@@ -92,7 +93,7 @@ public final class Area {
      * Calculate the area of a rectangle.
      *
      * @param length length of a rectangle
-     * @param width  width of a rectangle
+     * @param width width of a rectangle
      * @return area of given rectangle
      */
     public static double surfaceAreaRectangle(final double length, final double width) {
@@ -109,8 +110,8 @@ public final class Area {
      * Calculate surface area of a cylinder.
      *
      * @param radius radius of the floor
-     * @param height height of the cylinder.
-     * @return volume of given cylinder
+     * @param height height of the cylinder
+     * @return surface area of given cylinder
      */
     public static double surfaceAreaCylinder(final double radius, final double height) {
         if (radius <= 0) {
@@ -138,7 +139,7 @@ public final class Area {
     /**
      * Calculate the area of a triangle.
      *
-     * @param base   base of triangle
+     * @param base base of triangle
      * @param height height of triangle
      * @return area of given triangle
      */
@@ -155,7 +156,7 @@ public final class Area {
     /**
      * Calculate the area of a parallelogram.
      *
-     * @param base   base of a parallelogram
+     * @param base base of a parallelogram
      * @param height height of a parallelogram
      * @return area of given parallelogram
      */
@@ -172,8 +173,8 @@ public final class Area {
     /**
      * Calculate the area of a trapezium.
      *
-     * @param base1  upper base of trapezium
-     * @param base2  bottom base of trapezium
+     * @param base1 upper base of trapezium
+     * @param base2 bottom base of trapezium
      * @param height height of trapezium
      * @return area of given trapezium
      */
@@ -219,9 +220,9 @@ public final class Area {
     /**
      * Calculate the surface area of a cone.
      *
-     * @param radius radius of cone.
-     * @param height of cone.
-     * @return surface area of given cone.
+     * @param radius radius of cone
+     * @param height height of cone
+     * @return surface area of given cone
      */
     public static double surfaceAreaCone(final double radius, final double height) {
         if (radius <= 0) {
